@@ -1,0 +1,165 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="images/apple-touch-startup-image-320x460.png" />
+    <title>Digital You</title>
+    <link rel="stylesheet" href="css/framework7.css">
+    <link rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="css/swipebox.css" />
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,900' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>   
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/Chart.js"></script>
+
+    <script type="text/javascript">
+
+
+        function OpenPage(url) {
+
+            window.location.replace(url);
+
+        }
+    </script>
+
+
+</head>
+<body id="mobile_wrap">
+    <div class="statusbar-overlay"></div>
+
+    <div class="panel-overlay"></div>
+
+    <div class="panel panel-left panel-cover">
+        <nav class="list-nav-small">
+            <ul>
+                <li class="home-icon-small"><a href="index.html" class="close-panel">Home</a></li>
+                <li class="about-icon-small"><a href="about.html" class="close-panel">About</a></li>
+                <li class="features-icon-small"><a href="features.html" class="close-panel">Features</a></li>
+                <li class="photos-icon-small"><a href="photos.html" class="close-panel">Gallery</a></li>
+                <li class="video-icon-small"><a href="videos.html" class="close-panel">Videos</a></li>
+                <li class="blog-icon-small"><a href="blog.html" class="close-panel">Blog</a></li>
+                <li class="contact-icon-small"><a href="contact.html" class="close-panel">Contact</a></li>
+                <li class="contact-icon-small"><a href="#" onclick="Loadurl('QuickLink.html')" class="close-panel">Quick Links</a></li>
+                <li class="dashboard-icon-small"><a href="#" onclick="Loadurl('Dashboard.html')" class="close-panel">Dashboard</a></li>
+                <li class="dashboard-icon-small"><a href="#" onclick="Loadurl('Maps.html')" class="close-panel">Maps</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <div class="views">
+
+        <div class="view view-main">
+
+            <div class="pages">
+
+                <div data-page="index" class="page homepage">
+                    <div class="page-content">
+<!--
+                        <div class="menu_open_icon"><a href="#" data-panel="left" class="open-panel"><img src="images/menu_open_circle.png" alt="" title="" /></a></div>
+-->
+                        <div class="minimal_intro">
+                           <!-- <span>Digital You</span> <br />-->
+                            - Web App<br />
+
+                           
+                        </div>
+
+                        <nav class="list-nav">
+                            <ul>
+
+                                <li class="photos-icon-small"><a href="#"  onclick="OpenPage('https://cmtindiaonline.accenture.com/mobile1')">App 1</a></li>
+                                 <li class="photos-icon-small"><a href="#"  onclick="OpenPage('https://cmtindiaonline.accenture.com/mobile2')">App 2</a></li>
+                                  <li class="photos-icon-small"><a href="#"  onclick="OpenPage('https://cmtindiaonline.accenture.com/mobile3')">App 3</a></li>
+
+                                   <li class="photos-icon-small"><a href="#"  onclick="OpenPage('https://cmtindiaonline.accenture.com/mobile4')">App 4</a></li>
+                                    <li class="photos-icon-small"><a href="#"  onclick="OpenPage('https://cmtindiaonline.accenture.com/mobile5')">App 5</a></li>
+                                     <li class="photos-icon-small"><a href="#"  onclick="OpenPage('https://cmtindiaonline.accenture.com/mobile6')">App 6</a></li>
+
+                                      <li class="photos-icon-small"><a href="#"  onclick="OpenPage('https://cmtindiaonline.accenture.com/mobile7')">App 7</a></li>
+                                       <li class="photos-icon-small"><a href="#"  onclick="OpenPage('https://cmtindiaonline.accenture.com/mobile8')">App 8</a></li>
+                                        <li class="photos-icon-small"><a href="#"  onclick="OpenPage('https://cmtindiaonline.accenture.com/mobile9')">App 9</a></li>
+                              
+                            </ul>
+                        </nav>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+<!--
+    <div class="views">
+
+        <div class="view view-main">
+
+
+            <div class="pages">
+                <div data-page="projects" class="page no-toolbar no-navbar">
+                    <div class="page-content">
+                        <div class="navbarpages">
+                            <div class="navbar_home_link"><a href="index.html"><img src="images/icons/white/home.png" alt="" title="" /></a></div>
+                            <div class="navbar_page_center">Quick Links</div>
+                            <div class="menu_open_icon_white"><a href="#" class="open-panel"><img src="images/menu_open.png" alt="" title="" /></a></div>
+                        </div>
+                        <div id="pages_maincontent">
+                            <p>
+                                <input id="Button1" type="button" onclick="OpenPage('https://cmtindiaonline.accenture.com/mobile1')" value="Call App 1" />
+                            </p>
+                            <p>
+                                <input id="Button2" type="button" onclick="OpenPage('https://cmtindiaonline.accenture.com/mobile2')" value="Call App 2" />
+                            </p>
+                            <p>
+                                <input id="Button3" type="button" onclick="OpenPage('https://cmtindiaonline.accenture.com/mobile3')" value="Call App 3" />
+                            </p>
+                            <p>
+                                <input id="Button4" type="button" onclick="OpenPage('https://cmtindiaonline.accenture.com/mobile4')" value="Call App 4" />
+                            </p>
+                            <p>
+                                <input id="Button5" type="button" onclick="OpenPage('https://cmtindiaonline.accenture.com/mobile5')" value="Call App 5" />
+                            </p>
+                            <p>
+                                <input id="Button6" type="button" onclick="OpenPage('https://cmtindiaonline.accenture.com/mobile6')" value="Call App 6" />
+                            </p>
+                            <p>
+                                <input id="Button7" type="button" onclick="OpenPage('https://cmtindiaonline.accenture.com/mobile7')" value="Call App 7" />
+                            </p>
+                            <p>
+                                <input id="Button8" type="button" onclick="OpenPage('https://cmtindiaonline.accenture.com/mobile8')" value="Call App 8" />
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    -->
+
+
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.swipebox.js"></script>
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="js/email.js"></script>
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+
+</body>
+</html>
